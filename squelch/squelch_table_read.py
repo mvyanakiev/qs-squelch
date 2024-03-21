@@ -6,8 +6,10 @@ import os
 # Handle arguments
 # if len(sys.argv) not in [4,5]: print(f'Usage: {os.path.basename(sys.argv[0])} <COMx> <address> <len> [dest_file.bin]') ; exit(1)
 
-arg_port = sys.argv[1]
-if len(sys.argv)==5: 
+# arg_port = sys.argv[1]
+arg_port = '/dev/cu.usbserial-110'
+
+if len(sys.argv)==5:
     arg_file=sys.argv[4] 
 else: 
     arg_file=None
