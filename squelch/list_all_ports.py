@@ -1,6 +1,6 @@
 from serial.tools import list_ports
 
-correctPort = None
+correctPort = 'Not found'
 
 ports = list(list_ports.comports())
 i = 0
