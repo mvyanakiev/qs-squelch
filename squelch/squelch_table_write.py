@@ -2,7 +2,6 @@ import libuvk5
 import sys
 import os
 
-
 # Handle arguments
 if len(sys.argv) not in [2,3]: print(f'Usage: {os.path.basename(sys.argv[0])} <COMx> <address> <hex_payload>') ; exit(1)
 
@@ -42,4 +41,3 @@ with libuvk5.uvk5(arg_port) as radio:
         radio.set_cfg_mem(0x1e90,vhf_squelch_close_noise).hex()
         radio.set_cfg_mem(0x1ea0,vhf_squelch_close_glitch).hex()
         radio.set_cfg_mem(0x1eb0,vhf_squelch_open_glitch).hex()
-        
